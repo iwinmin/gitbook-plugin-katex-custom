@@ -1,0 +1,57 @@
+{
+  "name": "gitbook-plugin-katex-custom",
+  "version": "0.1.0",
+  "description": "Math typesetting using custom KaTex into GitBook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "gitbook": ">=2.4.1 <4.0.0"
+  },
+  "gitbook": {
+    "properties": {
+      "katex": {
+        "default": "katex",
+        "title": "Default katex module name",
+        "type": "string"
+      },
+      "css": {
+        "title": "Css asset file need to include into the page",
+        "default": [
+          "katex.min.css"
+        ],
+        "type": [
+          "string"
+        ]
+      },
+      "resources": {
+        "title": "Assets resources file or path need to copy",
+        "default": [
+          "katex.min.css",
+          "fonts"
+        ],
+        "type": [
+          "string"
+        ]
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iwinmin/gitbook-plugin-katex-custom.git"
+  },
+  "keywords": [
+    "gitbook",
+    "katex",
+    "math",
+    "latex"
+  ],
+  "author": "Winmin Tam",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/iwinmin/gitbook-plugin-katex-custom/issues"
+  },
+  "homepage": "https://github.com/iwinmin/gitbook-plugin-katex-custom#readme",
+  "dependencies": {}
+}
